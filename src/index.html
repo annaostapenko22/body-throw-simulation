@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Body Throw Simulation</title>
+</head>
+<body>
+    <div class="simulator">
+        <section class="panel info-panel">
+            <p class="position passed-distance">Passed X distance, m: <span class="position-value distance">0.00</span></p>
+            <p class="position current-height">Current height, m: <span class="position-value height">0.00</span></p>
+            <p class="position current-angle">Initial Angle, °: <span class="position-value angle">45</span></p>
+            <p class="position initial-speed">Initial Speed, m/s: <span class="speed-color"></span><span class="position-value speed">111</span></p>
+        </section>
+        <section class="actions-zone">
+            <div id="screen">
+                <div id="map">
+                    <div class="map-background-top"></div>
+                    <div class="map-background-bottom"></div>
+                    <div class="barrier"></div>
+                    <div class="centaur"></div>
+                    <div class="ground"></div>
+                    <div id="arrow">
+                        <div class="arrow-drag-point"></div>
+                        <div class="arrow-change-angle"></div>
+                        <div class="arrow-change-speed"></div>
+                        <div class="arrow-tip-left"></div>
+                        <div class="arrow-tip-right"></div>
+                        <div class="arrow-middle"></div>
+                        <div class="arrow-tail">
+                            <div class="tail-detail-top"></div>
+                            <div class="tail-detail-top"></div>
+                            <div class="tail-detail-top"></div>
+                            <div class="tail-detail-top"></div>
+                            <div class="tail-detail-top"></div>
+                            <div class="tail-detail-bottom"></div>
+                            <div class="tail-detail-bottom"></div>
+                            <div class="tail-detail-bottom"></div>
+                            <div class="tail-detail-bottom"></div>
+                            <div class="tail-detail-bottom"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="panel control-panel">
+            <div class="control">
+                <label for="simulation-speed-select">Simulation Speed: </label>
+                <select name="speed-play" id="simulation-speed-select">
+                    <option value="1">1X</option>
+                    <option value="2">2X</option>
+                    <option value="3" selected>3X</option>
+                </select>
+            </div>
+            <div class="control">
+                <button id="start-button">Start</button>
+                <button id="pause-button">Pause</button>
+            </div class="control">
+            <div class="control">
+                <label for="barrier-checkbox">Barrier Present: </label>
+                <input type="checkbox" id="barrier-checkbox">
+            </div>
+            <div class="control">
+                <label for="bounce-checkbox">Bounce Allowed: </label>
+                <input type="checkbox" checked id="bounce-checkbox">
+            </div>
+        </section>
+    </div>
+    <div class="support-message">
+        <div>
+            <p>Project is supported on the screens from width: 602px.</p>
+            <p>Please use another device or maybe try to rotate and refresh yours.</p>
+            <p>Thanks for your visit =)</p>
+        </div>
+    </div>
+</body>
+</html>

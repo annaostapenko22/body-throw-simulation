@@ -1,0 +1,2 @@
+export const FREE_FALL_ACCELERATON = 9.81;
+export const MILLISECONDS_IN_SECOND = 1000;
